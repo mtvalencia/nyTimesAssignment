@@ -33,46 +33,50 @@
 </head>
 
 <body>
-    <!-- Bootstrap 4 fixed-width container -->
+  
     <div class="container">
 
         <!-- NYT Search Header -->
         <div class="row">
-            <div class="col-sm" id="nyt-header">
-                <h1>New York Times Search</h1>
-            </div>
+            <div class="jumbotron" class="col-sm-12" style="background-color: #20315A ; color: white;">
+                <h1 class="text-center"><strong><i class="fa fa-newspaper-o"></i> New York Times Search</strong></h1>
+              </div>
         </div>
 
-        <div class="row">
-            <div class="col-sm">
-                <h3>Search Parameters</h3>
-            </div>            
-            <div class="col-sm">
-                <form id="search-form">
-                    <label for="search-form">
-                        Search Term:
-                    </label>
-                    <input type="text" id="search-term">
-                    <label for="search-form">
-                            Number of Records to Retrieve:
-                    </label>
-                    <input type="text" id="search-limit">
-                    <label for="search-form">
-                            Start Year (Optional):
-                    </label>
-                    <input type="text" id="search-start">
-                    <label for="search-form">
-                            End Year (Optional):
-                    </label>
-                    <input type="text" id="search-end">
-    
-                    <br>
-                    <!-- Button trigger new search term to be added -->
-                    <input id="perform-search" type="submit" value="Submit">
-                    <input id="clear-search" type="submit" value="Clear">
-                </form>                      
+        <form role="form">
+
+              <div class="form-group">
+              <label for="search">Search Term:</label>
+              <input type="text" class="form-control" id="search-term">
             </div>
-        </div>
+
+         
+            <div class="form-group">
+              <label for="pwd">Number of Records to Retrieve:</label>
+              <select class="form-control" id="num-records-select">
+                          <option value="1">1</option>
+                          <option value="5" selected>5</option>
+                          <option value="10">10</option>
+                      </select>
+            </div>
+
+            <
+            <div class="form-group">
+              <label for="start-year">Start Year (Optional):</label>
+              <input type="date" class="form-control" id="start-year">
+            </div>
+
+           
+            <div class="form-group">
+              <label for="end-year">End Year (Optional):</label>
+              <input type="date" class="form-control" id="end-year">
+            </div>
+
+           
+            <button type="submit" class="btn btn-default" id="run-search"><i class="fa fa-search"></i> Search</button>
+            <button type="button" class="btn btn-default" id="clear-all"><i class="fa fa-trash"></i> Clear Results</button>
+
+          </form>
 
     </div>
 
