@@ -40,62 +40,36 @@
               </div>
         </div>
 
-<<<<<<< HEAD
-        <form role="form">
-
-              <div class="form-group">
-              <label for="search">Search Term:</label>
-              <input type="text" class="form-control" id="search-term">
-=======
         <div class="row">
             <div class="col-sm-12">
-                <h3>Search Parameters</h3>
-            </div>            
-            <div class="col-sm-12">
-                <div class="col-sm-12">
-                        <label for="search-form">
-                                Search Term:
-                            </label>
-                            <input type="text" id="search-term">
+              <br>
+              <!-- First panel is for handling the search parameters -->
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title"><strong><i class="fa  fa-list-alt"></i>   Search Parameters</strong></h3>
                 </div>
-                <div class="col-sm-12">
-                </div>
-                <div class="col-sm-12">
-                        <label for="search-form">
-                                Number of Records to Retrieve:
-                        </label>
-                </div>
-                <div class="col-sm-12">
-                        <input type="text" id="search-limit">
-                        <label for="search-form">
-                                Start Year (Optional):
-                        </label>
-                </div>
-                <!-- <form id="search-form">
-                    <label for="search-form">
-                        Search Term:
-                    </label>
-                    <input type="text" id="search-term">
-                    <label for="search-form">
-                            Number of Records to Retrieve:
-                    </label>
-                    <input type="text" id="search-limit">
-                    <label for="search-form">
-                            Start Year (Optional):
-                    </label>
-                    <input type="text" id="search-start">
-                    <label for="search-form">
-                            End Year (Optional):
-                    </label> -->
-                    <input type="text" id="search-end">
-    
-                    <br>
-                    <!-- Button trigger new search term to be added -->
-                    <input id="perform-search" type="submit" value="Submit">
-                    <input id="clear-search" type="submit" value="Clear">
-                </form>                      
->>>>>>> 81eb28e36c82ff00d548fb66b24f4c7153b6bbd5
-            </div>
+                <div class="panel-body">
+      
+                  <!-- Here we create an HTML Form for handling the inputs-->
+                  <form role="form">
+      
+                    <!-- Here we create the text box for capturing the search term-->
+                    <div class="form-group">
+                      <label for="search">Search Term:</label>
+                      <input type="text" class="form-control" id="search-term">
+                    </div>
+      
+                    <!-- Here we capture the number of records that the user wants to retrieve  -->
+                    <div class="form-group">
+                      <label for="pwd">Number of Records to Retrieve:</label>
+                      <select class="form-control" id="num-records-select">
+                                  <option value="1">1</option>
+                                  <!-- Setting the option for 5 as default -->
+                                  <option value="5" selected>5</option>
+                                  <option value="10">10</option>
+                              </select>
+                    </div>
+      
 
          
             <div class="form-group">
@@ -107,7 +81,7 @@
                       </select>
             </div>
 
-            <
+            
             <div class="form-group">
               <label for="start-year">Start Year (Optional):</label>
               <input type="date" class="form-control" id="start-year">
