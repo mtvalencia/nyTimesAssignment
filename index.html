@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- NYT Search Assignment -->
+<head>
+    <meta charset="UTF-8">
+    <title>NYT Search</title>
+
+    <!-- Reset css -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+
+    <!-- Link to Bootstrap JS, Popper.js and jQuery -->
+    <link rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+        crossorigin="anonymous"></script>
+
+    <!-- Link to external stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Link to Ajax & game script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/nyt-app.js" defer></script>
+</head>
+
+<body>
+    <!-- Bootstrap 4 fixed-width container -->
+    <div class="container">
+
+        <!-- NYT Search Header -->
+        <div class="row">
+            <div class="col-sm" id="nyt-header">
+                <h1>New York Times Search</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm">
+                <h3>Search Parameters</h3>
+            </div>            
+            <div class="col-sm">
+                <form id="search-form">
+                    <label for="search-form">
+                        Search Term:
+                    </label>
+                    <input type="text" id="search-term">
+                    <label for="search-form">
+                            Number of Records to Retrieve:
+                    </label>
+                    <input type="text" id="search-limit">
+                    <label for="search-form">
+                            Start Year (Optional):
+                    </label>
+                    <input type="text" id="search-start">
+                    <label for="search-form">
+                            End Year (Optional):
+                    </label>
+                    <input type="text" id="search-end">
+    
+                    <br>
+                    <!-- Button trigger new search term to be added -->
+                    <input id="perform-search" type="submit" value="Submit">
+                    <input id="clear-search" type="submit" value="Clear">
+                </form>                      
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
