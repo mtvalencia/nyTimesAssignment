@@ -1,0 +1,21 @@
+/*******************************************************************************
+* Stylesheet for NYT Search Assignment
+*******************************************************************************/
+/*  Page default settings */
+body {
+    background-color: rgb(223, 215, 215);
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+#nyt-header {
+    background-color: rgb(27, 19, 73);
+    color: whitesmoke;
+    text-align: center;
+    margin: 10px auto 30px;
+}
+
+h1 {
+    padding: 10px auto 50px;
+}
